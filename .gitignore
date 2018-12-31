@@ -1,0 +1,4 @@
+node_modules
+config
+src/registerServiceWorker
+how-to-use.txt
