@@ -1,4 +1,6 @@
 node_modules
 config
-src/registerServiceWorker
+scripts
+.DS_Store
 how-to-use.txt
+package-lock.json
