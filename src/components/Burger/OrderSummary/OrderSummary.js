@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Aux from '../../../hoc/Auxx';
+import Button from '../../UI/Button/Button';
 
 const orderSummary = props => {
   const ingSummary = Object.keys(props.ingredients).map(ingkey => {
@@ -20,6 +21,14 @@ const orderSummary = props => {
 				{ingSummary}
 			</ul>
 			<p>Continue to checkout?</p>
+      <Button 
+      btnType="Danger"
+      clicked={props.purchaseCancelled}
+      >취소</Button>
+      <Button 
+      btnType="Success"
+      clicked={props.purchaseContinued}
+      >계속</Button>
     </Aux>
   );
 };
