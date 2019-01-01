@@ -8,3 +8,41 @@
 	margin: auto;
 	padding: 10px 0;
 }
+
+.OrderButton {
+	background-color: antiquewhite;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #cfd4ce;
+	color: #30432d;
+	font-family: inherit;
+	font-size: 1 em;
+	font-weight: bold;
+	padding: 15px 30px;
+	box-shadow: 2px 2px 2px #a0db41;
+}
+
+.OrderButton:hover, .OrderButton:active {
+	background-color: #a0db41;
+	border: 1px solid #30432d;
+	color: #769472;
+}
+
+.OrderButton:disabled {
+	background-color: #a3bb7d;
+	cursor: now-allowed;
+	border: 1px solid #cfd4ce;
+	color: #769472;
+}
+
+@keyframes enable {
+	0% {
+		transform: scale(1);
+	}
+	60% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
