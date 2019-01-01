@@ -14,7 +14,7 @@ const buildControls = props => {
 	return(
 		<div className={classes.BuildControls}>
 			<p style={{ color: 'white' }}>현재 가격은 {' '} 
-				<strong>{props.price.toFixed(0)}</strong>원 입니다.</p>
+				<strong>{props.price.toFixed(0)}</strong>원입니다.</p>
 			{controls.map(ctrl => (
 				<BuildControl
 			  	key={ctrl.label}
@@ -24,6 +24,11 @@ const buildControls = props => {
 					disabled={props.disabled[ctrl.type]}
 				/>
 			))}
+			<button 
+			disabled={!props.purchasable}
+			className={classes.OrderButton}
+			onClick={props.ordered}
+			>ORDER NOW</button>
 		</div>
 	);
 	
