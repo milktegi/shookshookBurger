@@ -20,7 +20,8 @@ const orderSummary = props => {
       <ul>
 				{ingSummary}
 			</ul>
-			<p>Continue to checkout?</p>
+      <p>현재까지의 가격은<strong> {props.price.toFixed(0)}원</strong>입니다.</p>
+			<p>주문을 계속하시겠습니까?</p>
       <Button 
       btnType="Danger"
       clicked={props.purchaseCancelled}
