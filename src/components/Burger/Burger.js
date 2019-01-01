@@ -18,10 +18,12 @@ const burger = props => {
 	}
 
 	return(
+		<div className="container">
 		<div className={classes.Burger}>
 			<Ingredients type="bread-top"/>
 		{transformedIng}
 			<Ingredients type="bread-bottom"/>
+		</div>
 		</div>
 	)
 }
